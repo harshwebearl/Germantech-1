@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=1512, initial-scale=1.0">
-  <title>Contact Us</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1512, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
+
 <body class="bg-[#043357] min-h-screen">
-  <!-- Top Contact Bar -->
-   <div class="bg-gray-900 text-white text-sm flex items-center justify-between px-4 py-1">
+    <!-- Top Contact Bar -->
+    <div class="bg-gray-900 text-white text-sm flex items-center justify-between px-4 py-1">
         <div class="flex items-center space-x-2">
             <span class="text-orange-500">📞</span>
             <span>+91-9814868271, +9814468271</span>
@@ -31,8 +33,8 @@
             <li><a href="Home.html" class="text-black border-b-2 border-black">HOME</a></li>
             <li><a href="About-us.html" class="text-black">ABOUT US</a></li>
             <li><a href="productpage1.html" class="text-black">POR PRODUCT</a></li>
-            <li><a href="#" class="text-black">TESTIMONIALS</a></li>
-            <li><a href="#" class="text-black">GALLERY</a></li>
+            <li><a href="testimonials.html" class="text-black">TESTIMONIALS</a></li>
+            <li><a href="gallery.html" class="text-black">GALLERY</a></li>
             <li><a href="contact-us.html" class="text-black">CONTACT US</a></li>
         </ul>
         <button class="md:hidden flex flex-col space-y-1">
@@ -42,207 +44,270 @@
         </button>
     </nav>
 
-      <section class="max-w-5xl mx-auto mt-12 bg-white rounded-2xl shadow-lg flex overflow-hidden">
-        <!-- Left: Image with custom curve -->
-        <div class="relative w-1/2 h-full">
-            <img src="image/v738_62.png" alt="House object-cover " />
-        </div>
-        <!-- Right: Content -->
-        <div
-            class="w-1/2  p-10 flex flex-col justify-center" style="background: linear-gradient(270deg, #46B7CB 0%, #328290 15.5%, #00335B 97.41%);
-">
-            <h2 class="text-white text-2xl font-bold mb-2 underline underline-offset-4">ABOUT US</h2>
-            <h3 class="text-white text-xl font-bold mb-4">Welcome to Dayal's UPVC<br>Window and Door</h3>
-           <p class="text-white text-[16px] font-medium mb-8 leading-[1] tracking-[0] text-justify font-[Montserrat]">
-    Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers dedicated to developing
-    and manufacturing high-performance uPVC profiles that meet European standards. Our innovative products
-    enhance living and working spaces by reducing heat, minimizing noise, and requiring no maintenance.
-    Termite resistance and environmentally safe materials reflect our commitment to sustainability. With
-    advanced machinery and in-house extrusion facilities, we ensure every profile meets the highest
-    benchmarks of modern design and performance.
-</p>
-            <div class="flex items-center justify-between mb-8">
-                <div class="flex flex-col items-center">
-                    <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <rect x="3" y="3" width="18" height="18" rx="2" />
+    <div class="relative  ">
+        <!-- Ellipse image behind the card, bottom left -->
+        <img src="image/Ellipse 4.png" alt="Ellipse"
+            class="absolute left-0 -bottom-36 w-96 h-auto  " />
+        <!-- Card Section (z-10 to be above the ellipse) -->
+        <section class="max-w-6xl mx-auto rounded-2xl bg-[#00335B] shadow-lg flex overflow-hidden relative z-10">
+            <!-- Left: Image with custom curve -->
+            <div class="relative w-1/2 h-[600px] overflow-hidden flex items-stretch">
+                <img src="image/v738_62.png" alt="House object-cover"
+                    class="w-full h-full object-cover object-center  bg-[#00335B] block"
+                    style="min-width:100%;min-height:100%;" />
+            </div>
+            <!-- Right: Content -->
+            <div class="w-1/2 p-8 flex flex-col justify-center"
+                style="background: linear-gradient(270deg, #46B7CB 0%, #328290 15.5%, #00335B 97.41%);">
+                <h2 class="text-white text-3xl font-bold mb-6 underline underline-offset-4 font-montserrat">ABOUT US
+                </h2>
+                <p class="text-white text-[16px] font-normal leading-[1] tracking-[0] text-justify font-montserrat">
+                    Founded in 2019, Dayal Fabricator has grown into a trusted name in the manufacturing of high-quality
+                    uPVC doors and windows. Driven by a passionate team of engineers and experts, we are committed to
+                    creating eco-friendly, sustainable, and innovative solutions that redefine modern living and working
+                    spaces.
+                    Our products are designed with European standards in mind, ensuring unmatched durability, strength,
+                    and long-lasting performance. Each frame is manufactured using superior-grade uPVC profiles and
+                    cutting-edge technology at our state-of-the-art production facility, guaranteeing precision and
+                    consistency in every product we deliver.<br><br>
+                    What sets us apart is our commitment to sustainability. By offering uPVC solutions that reduce
+                    energy consumption through advanced heat and sound insulation, we help customers lower energy costs
+                    while enjoying enhanced comfort all year round. Our doors and windows are also maintenance-free,
+                    termite-resistant, and weather-proof, making them a smart investment for both residential and
+                    commercial spaces.
+                    At Dayal Fabricator, we combine innovation, craftsmanship, and advanced technology to create
+                    products that not only improve the functionality and aesthetics of your property but also contribute
+                    to a greener and more sustainable future.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <section class="w-full bg-[#f4f6f8] h-full py-16 mt-20 flex flex-col justify-center items-center relative overflow-hidden">
+        <!-- Decorative Images (easy to move/change) -->
+        <img src="image/Ellipse 4.png" alt="Ellipse Left"
+            class="absolute left-0 bottom-0 w-60 h-auto pointer-events-none z-0" />
+        <img src="image/Ellipse 3.png" alt="Ellipse Top Right"
+            class="absolute right-0 top-48 w-60 h-auto pointer-events-none z-0" />
+        <img src="image/Ellipse 4(1).png" alt="Ellipse Right"
+            class="absolute right-0 bottom-40 w-60 h-auto pointer-events-none z-0" />
+        <!-- Main Content -->
+        <h1 class="text-center text-[#054C73] text-3xl md:text-5xl font-bold uppercase tracking-wide mb-12 font-[poppins] z-10">
+            OUR VISION AND MISSION
+        </h1>
+        <div class="max-w-6xl w-full flex flex-col md:flex-row gap-8 px-4 md:px-0 items-stretch relative z-10">
+            <!-- Vision Box -->
+            <div style="width:611px;height:566px;background:#054C73;border-radius:15px;padding:40px 30px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,0.12);"
+                class="text-white self-stretch">
+                <p class="text-base leading-relaxed text-center m-0">
+                    To become a trusted leader in sustainable uPVC door and window solutions, transforming every home
+                    and workspace with innovation, durability, and eco-friendly design. We envision a future where
+                    modern living and environmental responsibility go hand in hand, delivering products that enhance
+                    comfort, reduce energy consumption, and set new benchmarks in quality and performance.
+                </p>
+            </div>
+            <!-- Mission Grid -->
+            <div class="grid grid-cols-2 gap-[18px] w-[565px] h-[566px] self-stretch">
+                <div class="bg-white rounded-tl-[0px]  rounded-bl-[0px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
                     </svg>
-                    <span class="text-white text-xs font-semibold">QUALITY</span>
+                    <div class="font-bold text-center text-gray-700">Deliver high quality innovative UPVC product</div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path d="M12 2l2 7h7l-5.5 4 2 7-5.5-4-5.5 4 2-7L3 9h7z" />
+                <div
+                    class="bg-white rounded-tl-[0px] rounded-tr-[40px] rounded-bl-[0px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
                     </svg>
-                    <span class="text-white text-xs font-semibold">DURABILITY</span>
+                    <div class="font-bold text-center text-gray-700">Enhance Aesthetics Functionality of living</div>
                 </div>
-                <div class="flex flex-col items-center">
-                    <svg class="w-8 h-8 text-white mb-2" fill="none" stroke="currentColor" stroke-width="2"
-                        viewBox="0 0 24 24">
-                        <path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0v10l6 4" />
+                <div
+                    class="bg-white  rounded-tr-[0px] rounded-bl-[40px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" />
                     </svg>
-                    <span class="text-white text-xs font-semibold">ECO-FRIENDLY</span>
+                    <div class="font-bold text-center text-gray-700">Promote sustainability and Eco-friendly Excellence
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-tl-[0px] rounded-tr-[0px]  rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    <div class="font-bold text-center text-gray-700">Achieve customer satisfaction through excellence
+                    </div>
                 </div>
             </div>
-            <button
-                class="border border-white w-48 text-white px-8 py-2.5 rounded-full hover:bg-white hover:text-[#00335b] transition">Learn
-                More</button>
         </div>
     </section>
 
-    <section class="w-full bg-[#f4f6f8] py-16 flex justify-center items-center">
-				<div class="max-w-6xl w-full flex flex-col md:flex-row gap-8 px-4 md:px-0 items-stretch">
-					<!-- Vision Box -->
-					<div style="width:611px;height:566px;background:#054C73;border-radius:15px;padding:40px 30px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,0.12);" class="text-white self-stretch">
-						<p class="text-base leading-relaxed text-center m-0">
-							To become a trusted leader in sustainable uPVC door and window solutions, transforming every home and workspace with innovation, durability, and eco-friendly design. We envision a future where modern living and environmental responsibility go hand in hand, delivering products that enhance comfort, reduce energy consumption, and set new benchmarks in quality and performance.
-						</p>
-					</div>
-					<!-- Mission Grid -->
-					<div class="grid grid-cols-2 gap-[18px] w-[565px] h-[566px] self-stretch">
-						<div class="bg-white rounded-tl-[0px]  rounded-bl-[0px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" /></svg>
-							<div class="font-bold text-center text-gray-700">Deliver high quality innovative UPVC product</div>
-						</div>
-						<div class="bg-white rounded-tl-[0px] rounded-tr-[40px] rounded-bl-[0px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" /></svg>
-							<div class="font-bold text-center text-gray-700">Enhance Aesthetics Functionality of living</div>
-						</div>
-						<div class="bg-white  rounded-tr-[0px] rounded-bl-[40px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" /></svg>
-							<div class="font-bold text-center text-gray-700">Promote sustainability and Eco-friendly Excellence</div>
-						</div>
-						<div class="bg-white rounded-tl-[0px] rounded-tr-[0px]  rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-							<svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
-							<div class="font-bold text-center text-gray-700">Achieve customer satisfaction through excellence</div>
-						</div>
-					</div>
-				</div>
-			</section>
 
+    <section class="w-full bg-[#f4f6f8] py-16 flex flex-col items-center">
+        <div class="max-w-5xl w-full mx-auto">
+            <h2 class="text-center text-[#145da0] text-2xl md:text-3xl font-bold mb-12 tracking-wide">OUR PROCESS</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0 relative">
+                <!-- <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 z-0 md:block hidden"></div> -->
+                <div class="relative z-10 flex flex-col items-center w-1/4">
+                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 17v-2a4 4 0 018 0v2M9 17H7a2 2 0 01-2-2v-5a2 2 0 012-2h10a2 2 0 012 2v5a2 2 0 01-2 2h-2M9 17v2a2 2 0 002 2h2a2 2 0 002-2v-2" />
+                        </svg>
+                    </div>
+                    <div class="font-bold text-lg text-gray-800 mb-1">RESEARCH</div>
+                    <div class="text-xs text-gray-600">Identify<br>client needs</div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center w-1/4">
+                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" />
+                        </svg>
+                    </div>
+                    <div class="font-bold text-lg text-gray-800 mb-1">IDEATION</div>
+                    <div class="text-xs text-gray-600">Generate design<br>concepts</div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center w-1/4">
+                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M16.862 6.487l-1.414-1.414a2 2 0 00-2.828 0l-7.071 7.071a2 2 0 000 2.828l1.414 1.414a2 2 0 002.828 0l7.071-7.071a2 2 0 000-2.828z" />
+                        </svg>
+                    </div>
+                    <div class="font-bold text-lg text-gray-800">DESIGN</div>
+                    <div class="text-xs text-gray-600">Create<br>Prototypes</div>
+                </div>
+                <div class="relative z-10 flex flex-col items-center w-1/4">
+                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div class="font-bold text-lg text-gray-800 mb-1">IMPLEMENTATION</div>
+                    <div class="text-xs text-gray-600">Deploy<br>solution</div>
+                </div>
+            </div>
+            <div class="mt-16 flex justify-center">
+                <div style="width:1220.86px;height:268.72px;opacity:1;border-radius:20px;padding:79px 78px 83px 78px;gap:10px;border-width:1px;border-style:solid;border-color:#e5e7eb;box-shadow:0 4px 24px rgba(0,0,0,0.10);"
+                    class="bg-white flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex-1 text-center">
+                        <div class="text-3xl font-bold text-gray-800 mb-2">8000+</div>
+                        <div class="font-semibold text-gray-700">Project done</div>
+                    </div>
+                    <div class="flex-1 text-center">
+                        <div class="text-3xl font-bold text-gray-800 mb-2">90%</div>
+                        <div class="font-semibold text-gray-700">Enhanced security</div>
+                    </div>
+                    <div class="flex-1 text-center">
+                        <div class="text-3xl font-bold text-gray-800 mb-2">50+</div>
+                        <div class="font-semibold text-gray-700">Employees</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            	<section class="w-full bg-[#f4f6f8] py-16 flex flex-col items-center">
-					<div class="max-w-5xl w-full mx-auto">
-						<h2 class="text-center text-[#145da0] text-2xl md:text-3xl font-bold mb-12 tracking-wide">OUR PROCESS</h2>
-						<div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0 relative">
-							<!-- <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 z-0 md:block hidden"></div> -->
-							<div class="relative z-10 flex flex-col items-center w-1/4">
-								<div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2a4 4 0 018 0v2M9 17H7a2 2 0 01-2-2v-5a2 2 0 012-2h10a2 2 0 012 2v5a2 2 0 01-2 2h-2M9 17v2a2 2 0 002 2h2a2 2 0 002-2v-2"/></svg>
-								</div>
-								<div class="font-bold text-lg text-gray-800 mb-1">RESEARCH</div>
-								<div class="text-xs text-gray-600">Identify<br>client needs</div>
-							</div>
-							<div class="relative z-10 flex flex-col items-center w-1/4">
-								<div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z"/></svg>
-								</div>
-								<div class="font-bold text-lg text-gray-800 mb-1">IDEATION</div>
-								<div class="text-xs text-gray-600">Generate design<br>concepts</div>
-							</div>
-							<div class="relative z-10 flex flex-col items-center w-1/4">
-								<div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16.862 6.487l-1.414-1.414a2 2 0 00-2.828 0l-7.071 7.071a2 2 0 000 2.828l1.414 1.414a2 2 0 002.828 0l7.071-7.071a2 2 0 000-2.828z"/></svg>
-								</div>
-								<div class="font-bold text-lg text-gray-800">DESIGN</div>
-								<div class="text-xs text-gray-600">Create<br>Prototypes</div>
-							</div>
-							<div class="relative z-10 flex flex-col items-center w-1/4">
-								<div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-									<svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-								</div>
-								<div class="font-bold text-lg text-gray-800 mb-1">IMPLEMENTATION</div>
-								<div class="text-xs text-gray-600">Deploy<br>solution</div>
-							</div>
-						</div>
-						<div class="mt-16 flex justify-center">
-							<div style="width:1220.86px;height:268.72px;opacity:1;border-radius:20px;padding:79px 78px 83px 78px;gap:10px;border-width:1px;border-style:solid;border-color:#e5e7eb;box-shadow:0 4px 24px rgba(0,0,0,0.10);" class="bg-white flex flex-col md:flex-row items-center justify-between">
-								<div class="flex-1 text-center">
-									<div class="text-3xl font-bold text-gray-800 mb-2">8000+</div>
-									<div class="font-semibold text-gray-700">Project done</div>
-								</div>
-								<div class="flex-1 text-center">
-									<div class="text-3xl font-bold text-gray-800 mb-2">90%</div>
-									<div class="font-semibold text-gray-700">Enhanced security</div>
-								</div>
-								<div class="flex-1 text-center">
-									<div class="text-3xl font-bold text-gray-800 mb-2">50+</div>
-									<div class="font-semibold text-gray-700">Employees</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-        
-  <!-- Footer -->
- <footer class=" opacity-100 m-0 p-0 flex items-end" style="background: linear-gradient(180deg, #42AEC1 0%, #236A80 18.15%, #01355C 100%);">
-	<div class="w-full px-8 py-10">
-		<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-white">
-			<!-- Logo & About -->
-			<div class="flex flex-col items-start">
-				<div class="flex items-center mb-4">
-					<img src="https://i.ibb.co/6bQ7QpK/germantech-logo.png" alt="GermanTech Logo" class="w-12 h-12 mr-2">
-					<div>
-						<span class="font-bold text-xl block">GermanTech</span>
-						<span class="text-xs tracking-widest">uPVC WINDOWS</span>
-					</div>
-				</div>
-				<p class="text-sm leading-relaxed max-w-xs">
-					Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers committed to delivering eco-friendly, sustainable solutions. Our focus lies in the development and manufacturing of high-quality uPVC profiles that meet European standards.
-				</p>
-			</div>
-			<!-- Quick Links -->
-			<div>
-				<h3 class="font-bold text-lg mb-4">Quick Links</h3>
-				<ul class="space-y-2 text-sm">
-					<li><a href="#" class="hover:underline">Home</a></li>
-					<li><a href="#" class="hover:underline">About us</a></li>
-					<li><a href="#" class="hover:underline">Gallery</a></li>
-					<li><a href="#" class="hover:underline">Testimonials</a></li>
-					<li><a href="#" class="hover:underline">Contact Us</a></li>
-				</ul>
-				<div class="mt-6">
-					<select class="w-44 px-3 py-2 rounded shadow text-black">
-						<option>Select language</option>
-						<option>English</option>
-						<option>Hindi</option>
-						<option>Punjabi</option>
-					</select>
-					<div class="flex items-center mt-2 text-xs">
-						<span>Powered By :</span>
-						<img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png" alt="Google Translate" class="w-5 h-5 ml-1">
-					</div>
-				</div>
-			</div>
-			<!-- Dayal Fabricator Windows -->
-			<div>
-				<h3 class="font-bold text-lg mb-4">Dayal Fabricator Windows</h3>
-				<ul class="space-y-2 text-sm">
-					<li>UPVC Casement Windows</li>
-					<li>Tilt And Turn Windows</li>
-					<li>UPVC Sliding Doors</li>
-					<li>UPVC Casement Doors</li>
-					<li>Double Glazing Doors</li>
-					<li>DAYAL Steel Doors</li>
-				</ul>
-			</div>
-			<!-- Contact Info -->
-			<div>
-				<h3 class="font-bold text-lg mb-4">Contact Info</h3>
-				<ul class="space-y-4 text-sm">
-					<li class="flex items-start"><span class="material-icons mr-2">location_on</span>Tajpur road back side Barth box factory near Hp Gass Agency Ludhiana punjab</li>
-					<li class="flex items-center"><span class="material-icons mr-2">call</span><a href="tel:+919814868271" class="font-bold underline mr-2">+91-9814686271</a>, <a href="tel:+919814468271" class="font-bold underline">+9814468271</a></li>
-					<li class="flex items-center"><span class="material-icons mr-2">email</span><a href="mailto:Dayalupvcwindow@gmail.com" class="underline">Dayalupvcwindow@gmail.com</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="border-t border-white border-opacity-20 mt-10 pt-6 text-center text-xs text-white">
-			© Copyright 2024-2025 by Dayal Fabricator. || Designed & Developed by <span class="font-bold">WebEarl Technologies</span>
-		</div>
-	</div>
+    <!-- Footer -->
+    <footer class="w-full px-4 py-10 overflow-x-hidden"
+        style="background: linear-gradient(180deg, #42AEC1 0%, #236A80 18.15%, #01355C 100%);">
+        <div class="max-w-7xl mx-auto flex flex-wrap gap-8 text-white">
+            <!-- Logo & About -->
+            <div class="flex flex-col items-start min-w-[220px] flex-1">
+                <div class="flex items-center mb-4">
+                    <img src="https://i.ibb.co/6bQ7Qp/germantech-logo.png" alt="GermanTech Logo" class="w-12 h-12 mr-2">
+                    <div>
+                        <span class="font-bold text-xl block font-montserrat">GermanTech</span>
+                        <span class="text-xs tracking-widest font-montserrat">uPVC WINDOWS</span>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed font-montserrat">
+                    Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers committed to
+                    delivering eco-friendly, sustainable solutions. Our focus lies in the development and manufacturing
+                    of high-quality uPVC profiles that meet European standards.
+                </p>
+            </div>
+            <!-- Vertical Divider (hide on small screens) -->
+            <div class="border-l border-white border-opacity-30 mx-4 hidden md:block"></div>
+            <!-- Quick Links -->
+            <div class="flex-1 min-w-[180px]">
+                <h3 class="font-bold text-lg mb-4 font-montserrat">Quick Links</h3>
+                <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
+                    <li><a href="#" class="hover:underline">Home</a></li>
+                    <li><a href="#" class="hover:underline">About us</a></li>
+                    <li><a href="#" class="hover:underline">Gallery</a></li>
+                    <li><a href="#" class="hover:underline">Testimonials</a></li>
+                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                </ul>
+                <div class="mt-6">
+                    <select class="w-36 px-3 py-2 rounded shadow text-black font-montserrat">
+                        <option>Select language</option>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Punjabi</option>
+                    </select>
+                    <div class="flex items-center mt-2 text-xs font-montserrat">
+                        <span>Powered By :</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
+                            alt="Google Translate" class="w-5 h-5 ml-1">
+                    </div>
+                </div>
+            </div>
+            <!-- Dayal Fabricator Windows -->
+            <div class="flex-1 min-w-[180px]">
+                <h3 class="font-bold text-lg mb-4 font-montserrat">Dayal Fabricator Windows</h3>
+                <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
+                    <li>UPVC Casement Windows</li>
+                    <li>Tilt And Turn Windows</li>
+                    <li>UPVC Sliding Doors</li>
+                    <li>UPVC Casement Doors</li>
+                    <li>Double Glazing Doors</li>
+                    <li>DAYAL Steel Doors</li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="flex-1 min-w-[180px]">
+                <h3 class="font-bold text-lg mb-4 font-montserrat">Contact Info</h3>
+                <ul class="space-y-4 text-sm font-montserrat flex flex-col gap-1">
+                    <li class="flex items-center gap-4 opacity-100">
+                        <span class="material-icons text-2xl align-middle">location_on</span>
+                        <span class="font-montserrat leading-snug w-52 whitespace-nowrap">
+                            Tajpur road back side Barth box factory near Hp <br> Gass Agency Ludhiana punjab
+                            </br>
+                    </li>
+                    <li class="flex items-center"><span class="material-icons mr-2">call</span><a
+                            href="tel:+919814868271"
+                            class="font-bold underline mr-2 font-montserrat">+91-9814686271</a>, <a
+                            href="tel:+919814468271" class="font-bold underline font-montserrat">+91-9814468271</a></li>
+                    <li class="flex items-center"><span class="material-icons mr-2">email</span><a
+                            href="mailto:Dayalupvcwindow@gmail.com"
+                            class="font-montserrat">Dayalupvcwindow@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-white border-opacity-20 mt-10 pt-6 text-center text-xs text-white font-montserrat w-full">
+            © Copyright 2024-2025 by Dayal Fabricator. || Designed & Developed by <span
+                class="font-bold font-montserrat">WebEarl
+                Technologies</span>
+        </div>
+        <!-- Google Material Icons CDN -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </footer>
-  <!-- Google Material Icons CDN -->
-  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
 </body>
+
 </html>
