@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=1512, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
+    <title>About Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 
-<body class="bg-[#043357] min-h-screen">
+<body class=" min-h-screen">
     <!-- Top Contact Bar -->
     <div class="bg-gray-900 text-white text-sm flex items-center justify-between px-4 py-1">
         <div class="flex items-center space-x-2">
             <span class="text-orange-500">📞</span>
-            <span>+91-9814868271, +9814468271</span>
+            <span>+91-9814868271, +91-9814468271</span>
         </div>
         <div class="flex items-center space-x-2">
             <span class="text-orange-500">✉️</span>
@@ -30,10 +31,10 @@
 
         </div>
         <ul class="flex items-center space-x-8 font-semibold">
-            <li><a href="Home.html" class="text-black border-b-2 border-black">HOME</a></li>
-            <li><a href="About-us.html" class="text-black">ABOUT US</a></li>
+            <li><a href="Home.html" class="text-black ">HOME</a></li>
+            <li><a href="About-us.html" class="text-black border-b-2 border-black">ABOUT US</a></li>
             <li><a href="productpage1.html" class="text-black">POR PRODUCT</a></li>
-            <li><a href="testimonials.html" class="text-black">TESTIMONIALS</a></li>
+            <li><a href="Home.html" class="text-black">TESTIMONIALS</a></li>
             <li><a href="gallery.html" class="text-black">GALLERY</a></li>
             <li><a href="contact-us.html" class="text-black">CONTACT US</a></li>
         </ul>
@@ -44,24 +45,23 @@
         </button>
     </nav>
 
-    <div class="relative  ">
-        <!-- Ellipse image behind the card, bottom left -->
-        <img src="image/Ellipse 4.png" alt="Ellipse"
-            class="absolute left-0 -bottom-36 w-96 h-auto  " />
-        <!-- Card Section (z-10 to be above the ellipse) -->
-        <section class="max-w-6xl mx-auto rounded-2xl bg-[#00335B] shadow-lg flex overflow-hidden relative z-10">
+    <div class="relative h-auto w-full flex flex-col items-center justify-center"
+        style="background: url('image/about\ us\ page\ about\ us.png') left top/100% 900px no-repeat; min-height: 893px;">
+
+        <!-- Card Section (z-10 to be above the background) -->
+        <section class="max-w-[1200px] w-full rounded-2xl shadow-lg bg-[#00335B] flex overflow-hidden relative z-10">
             <!-- Left: Image with custom curve -->
-            <div class="relative w-1/2 h-[600px] overflow-hidden flex items-stretch">
+            <div class="relative w-1/2 h-[755px] overflow-hidden flex bg-[#00335B] items-stretch">
                 <img src="image/v738_62.png" alt="House object-cover"
                     class="w-full h-full object-cover object-center  bg-[#00335B] block"
-                    style="min-width:100%;min-height:100%;" />
+                    style="min-width:100%;min-height:330px;" />
             </div>
             <!-- Right: Content -->
-            <div class="w-1/2 p-8 flex flex-col justify-center"
-                style="background: linear-gradient(270deg, #46B7CB 0%, #328290 15.5%, #00335B 97.41%);">
+            <div class="w-1/2 p-12 flex flex-col justify-center"
+                style="background: linear-gradient(270deg, #46B7CB 0%, #328290 15.5%, #00335B 97.41%); min-width: 600px;">
                 <h2 class="text-white text-3xl font-bold mb-6 underline underline-offset-4 font-montserrat">ABOUT US
                 </h2>
-                <p class="text-white text-[16px] font-normal leading-[1] tracking-[0] text-justify font-montserrat">
+                <p style="width: 100%; max-width: 700px; font-family: 'Montserrat'; font-weight:400; font-style: Medium; font-size: 20px; line-height: 120%; letter-spacing: 0%; text-align: justify; color: white;">
                     Founded in 2019, Dayal Fabricator has grown into a trusted name in the manufacturing of high-quality
                     uPVC doors and windows. Driven by a passionate team of engineers and experts, we are committed to
                     creating eco-friendly, sustainable, and innovative solutions that redefine modern living and working
@@ -83,64 +83,74 @@
         </section>
     </div>
 
-    <section class="w-full bg-[#f4f6f8] h-full py-16 mt-20 flex flex-col justify-center items-center relative overflow-hidden">
-        <!-- Decorative Images (easy to move/change) -->
-        <img src="image/Ellipse 4.png" alt="Ellipse Left"
-            class="absolute left-0 bottom-0 w-60 h-auto pointer-events-none z-0" />
-        <img src="image/Ellipse 3.png" alt="Ellipse Top Right"
-            class="absolute right-0 top-48 w-60 h-auto pointer-events-none z-0" />
-        <img src="image/Ellipse 4(1).png" alt="Ellipse Right"
-            class="absolute right-0 bottom-40 w-60 h-auto pointer-events-none z-0" />
-        <!-- Main Content -->
-        <h1 class="text-center text-[#054C73] text-3xl md:text-5xl font-bold uppercase tracking-wide mb-12 font-[poppins] z-10">
+
+
+    <section
+        class="w-full bg-cover bg-center min-h-screen py-16 flex flex-col justify-center items-center relative"
+        style="background-image: url('./image/OUR\ VISION\ \ AND\ \ MISSION.png'); width:auto; height: 982px;"
+        >
+        <!-- Optional overlay if you want -->
+        <!-- <div class="absolute inset-0 bg-[#f4f6f8]/70 z-0"></div> -->
+
+        <h1
+            class="text-center text-[#054C73] text-3xl md:text-5xl font-bold uppercase tracking-wide mb-12 font-[poppins] z-10"
+        >
             OUR VISION AND MISSION
         </h1>
+
         <div class="max-w-6xl w-full flex flex-col md:flex-row gap-8 px-4 md:px-0 items-stretch relative z-10">
-            <!-- Vision Box -->
-            <div style="width:611px;height:566px;background:#054C73;border-radius:15px;padding:40px 30px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,0.12);"
-                class="text-white self-stretch">
-                <p class="text-base leading-relaxed text-center m-0">
-                    To become a trusted leader in sustainable uPVC door and window solutions, transforming every home
-                    and workspace with innovation, durability, and eco-friendly design. We envision a future where
-                    modern living and environmental responsibility go hand in hand, delivering products that enhance
-                    comfort, reduce energy consumption, and set new benchmarks in quality and performance.
+            <div
+                style="width:611px;height:566px;background:#054C73;border-radius:15px;padding:40px 30px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,0.12);"
+                class="text-white self-stretch"
+            >
+                <p class="text-[22px] font-bold font-[poppins] leading-relaxed text-center m-0">
+                    To become a trusted leader in sustainable uPVC door and window solutions,
+                    transforming every home and workspace with innovation, durability, and
+                    eco-friendly design. We envision a future where modern living and environmental
+                    responsibility go hand in hand, delivering products that enhance comfort,
+                    reduce energy consumption, and set new benchmarks in quality and performance.
                 </p>
             </div>
-            <!-- Mission Grid -->
+
             <div class="grid grid-cols-2 gap-[18px] w-[565px] h-[566px] self-stretch">
-                <div class="bg-white rounded-tl-[0px]  rounded-bl-[0px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M13 16h-1v-4h-1m1-4h.01M12 20a8 8 0 100-16 8 8 0 000 16z" />
-                    </svg>
-                    <div class="font-bold text-center text-gray-700">Deliver high quality innovative UPVC product</div>
-                </div>
                 <div
-                    class="bg-white rounded-tl-[0px] rounded-tr-[40px] rounded-bl-[0px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6" />
-                    </svg>
-                    <div class="font-bold text-center text-gray-700">Enhance Aesthetics Functionality of living</div>
-                </div>
-                <div
-                    class="bg-white  rounded-tr-[0px] rounded-bl-[40px] rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" />
-                    </svg>
-                    <div class="font-bold text-center text-gray-700">Promote sustainability and Eco-friendly Excellence
+                    class="bg-white rounded-tl-[0px] rounded-bl-[0px] rounded-br-[0px] shadow-md p-8 flex flex-col items-center justify-center w-[238px] h-[270px]"
+                >
+                    <img src="image/Frame.png" alt="" />
+                    <div
+                        class="font-bold text-[22px] font-montserrat text-center text-[#3D3D3D]"
+                    >
+                        Deliver high quality innovative UPVC product
                     </div>
                 </div>
                 <div
-                    class="bg-white rounded-tl-[0px] rounded-tr-[0px]  rounded-br-[0px] shadow-md p-6 flex flex-col items-center justify-center w-[238px] h-[235px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#066892] mb-2" fill="none"
-                        viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                    </svg>
-                    <div class="font-bold text-center text-gray-700">Achieve customer satisfaction through excellence
+                    class="bg-white rounded-tr-[40px] shadow-md p-8 flex flex-col items-center justify-center w-[238px] h-[270px]"
+                >
+                    <img src="image/Frame (3).png" alt="" />
+                    <div
+                        class="font-bold text-[22px] font-montserrat text-center text-[#3D3D3D]"
+                    >
+                        Enhance Aesthetics Functionality of living
+                    </div>
+                </div>
+                <div
+                    class="bg-white rounded-bl-[40px] shadow-md p-8 flex flex-col items-center justify-center w-[238px] h-[270px]"
+                >
+                    <img src="image/Frame (1).png" alt="" />
+                    <div
+                        class="font-bold text-[22px] font-montserrat text-center text-[#3D3D3D]"
+                    >
+                        Promote sustainability and Eco-friendly Excellence
+                    </div>
+                </div>
+                <div
+                    class="bg-white shadow-md p-8 flex flex-col items-center justify-center w-[238px] h-[270px]"
+                >
+                    <img src="image/Frame (2).png" alt="" />
+                    <div
+                        class="font-bold text-[22px] font-montserrat text-center text-[#3D3D3D]"
+                    >
+                        Achieve customer satisfaction through excellence
                     </div>
                 </div>
             </div>
@@ -148,58 +158,44 @@
     </section>
 
 
-    <section class="w-full bg-[#f4f6f8] py-16 flex flex-col items-center">
+
+
+
+    <section class="w-fullpy-16 flex flex-col items-center relative" style="background: url('image/OUR PROCESS.png') left top/auto 180% no-repeat; min-height: 500px;">
         <div class="max-w-5xl w-full mx-auto">
             <h2 class="text-center text-[#145da0] text-2xl md:text-3xl font-bold mb-12 tracking-wide">OUR PROCESS</h2>
-            <div class="flex flex-col md:flex-row items-center justify-between gap-8 md:gap-0 relative">
-                <!-- <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gray-300 z-0 md:block hidden"></div> -->
-                <div class="relative z-10 flex flex-col items-center w-1/4">
-                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M9 17v-2a4 4 0 018 0v2M9 17H7a2 2 0 01-2-2v-5a2 2 0 012-2h10a2 2 0 012 2v5a2 2 0 01-2 2h-2M9 17v2a2 2 0 002 2h2a2 2 0 002-2v-2" />
-                        </svg>
+            <div class="flex flex-col md:flex-row items-center justify-between md:gap-10 relative">
+                <div class="relative  -10 flex flex-col items-center w-1/4">
+                    <div style="background-color: #42aeb1;" class="w-36 h-36 rounded-full flex items-center justify-center mb-4">
+                        <img src="image/Vector.png" alt="">
                     </div>
                     <div class="font-bold text-lg text-gray-800 mb-1">RESEARCH</div>
                     <div class="text-xs text-gray-600">Identify<br>client needs</div>
                 </div>
                 <div class="relative z-10 flex flex-col items-center w-1/4">
-                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 0c2.21 0 4 1.79 4 4s-1.79 4-4 4-4-1.79-4-4 1.79-4 4-4z" />
-                        </svg>
+                    <div style="background-color: #42aeb1;" class="w-36 h-36 rounded-full flex items-center justify-center mb-4">
+                        <img src="image/Frame (4).png" alt="">
                     </div>
                     <div class="font-bold text-lg text-gray-800 mb-1">IDEATION</div>
                     <div class="text-xs text-gray-600">Generate design<br>concepts</div>
                 </div>
                 <div class="relative z-10 flex flex-col items-center w-1/4">
-                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16.862 6.487l-1.414-1.414a2 2 0 00-2.828 0l-7.071 7.071a2 2 0 000 2.828l1.414 1.414a2 2 0 002.828 0l7.071-7.071a2 2 0 000-2.828z" />
-                        </svg>
+                    <div style="background-color: #42aeb1;" class="w-36 h-36 rounded-full flex items-center justify-center mb-4">
+                        <img src="image/Frame (5).png" alt="">
                     </div>
                     <div class="font-bold text-lg text-gray-800">DESIGN</div>
                     <div class="text-xs text-gray-600">Create<br>Prototypes</div>
                 </div>
                 <div class="relative z-10 flex flex-col items-center w-1/4">
-                    <div class="bg-[#42aeb1] w-32 h-32 rounded-full flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
+                    <div style="background-color: #42aeb1;" class="w-36 h-36 rounded-full flex items-center justify-center mb-4">
+                        <img src="image/Frame (6).png" alt="">
                     </div>
                     <div class="font-bold text-lg text-gray-800 mb-1">IMPLEMENTATION</div>
                     <div class="text-xs text-gray-600">Deploy<br>solution</div>
                 </div>
             </div>
-            <div class="mt-16 flex justify-center">
-                <div style="width:1220.86px;height:268.72px;opacity:1;border-radius:20px;padding:79px 78px 83px 78px;gap:10px;border-width:1px;border-style:solid;border-color:#e5e7eb;box-shadow:0 4px 24px rgba(0,0,0,0.10);"
-                    class="bg-white flex flex-col md:flex-row items-center justify-between">
+            <div class="flex justify-center" style="margin-top:40px; margin-bottom: 30px;">
+                <div style="width:1000px;height:180px;opacity:1;border-radius:20px;padding:60px 30px;gap:10px;border: 1px solid #000000A8; box-shadow: 4px 4px 4px 0px #00000040;" class="bg-white flex flex-col md:flex-row items-center justify-between">
                     <div class="flex-1 text-center">
                         <div class="text-3xl font-bold text-gray-800 mb-2">8000+</div>
                         <div class="font-semibold text-gray-700">Project done</div>
@@ -242,11 +238,11 @@
             <div class="flex-1 min-w-[180px]">
                 <h3 class="font-bold text-lg mb-4 font-montserrat">Quick Links</h3>
                 <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
-                    <li><a href="#" class="hover:underline">Home</a></li>
-                    <li><a href="#" class="hover:underline">About us</a></li>
-                    <li><a href="#" class="hover:underline">Gallery</a></li>
-                    <li><a href="#" class="hover:underline">Testimonials</a></li>
-                    <li><a href="#" class="hover:underline">Contact Us</a></li>
+                    <li><a href="./Home.html" class="hover:underline">Home</a></li>
+                    <li><a href="./About-us.html" class="hover:underline">About us</a></li>
+                    <li><a href="./gallery.html" class="hover:underline">Gallery</a></li>
+                    <li><a href="./Home.html" class="hover:underline">Testimonials</a></li>
+                    <li><a href="./contact-us.html" class="hover:underline">Contact Us</a></li>
                 </ul>
                 <div class="mt-6">
                     <select class="w-36 px-3 py-2 rounded shadow text-black font-montserrat">

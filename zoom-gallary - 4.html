@@ -1,0 +1,190 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1512, initial-scale=1.0">
+  <title>Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+      <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #eaf6fb 60%, #1a5276 100%);
+            min-height: 100vh;
+            position: relative;
+        }
+        .abstract-bg {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .gallery-container {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        .gallery-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #1a5276;
+            margin-bottom: 2rem;
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        .gallery-image {
+            width: 880px;
+            max-width: 95vw;
+            height: 604px;
+            max-height: 60vh;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 32px rgba(26,82,118,0.25);
+            border: 4px solid #1a5276;
+        }
+        @media (max-width: 900px) {
+            .gallery-image {
+                width: 98vw;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#043357] min-h-screen">
+  <!-- Top Contact Bar -->
+   <div class="bg-gray-900 text-white text-sm flex items-center justify-between px-4 py-1">
+        <div class="flex items-center space-x-2">
+            <span class="text-orange-500">📞</span>
+            <span>+91-9814868271, +91-9814468271</span>
+        </div>
+        <div class="flex items-center space-x-2">
+            <span class="text-orange-500">✉️</span>
+            <span>Dayalupvcwindow@gmail.com</span>
+        </div>
+        <div>
+            <span>Tajpur road back side Barth box factory near Hp Gass Agency Ludhiana punjab</span>
+        </div>
+    </div>
+    <!-- Navbar -->
+    <nav class="bg-white shadow flex  justify-around">
+        <div class="flex items-center ">
+            <img src="image\v667_1279.png" alt="GermanTech Logo" class=" w-60 h-20">
+
+        </div>
+        <ul class="flex items-center space-x-8 font-semibold">
+            <li><a href="Home.html" class="text-black">HOME</a></li>
+            <li><a href="About-us.html" class="text-black">ABOUT US</a></li>
+            <li><a href="productpage1.html" class="text-black">POR PRODUCT</a></li>
+            <li><a href="Home.html" class="text-black">TESTIMONIALS</a></li>
+            <li><a href="gallery.html" class="text-black  border-b-2 border-black">GALLERY</a></li>
+            <li><a href="contact-us.html" class="text-black">CONTACT US</a></li>
+        </ul>
+        <button class="md:hidden flex flex-col space-y-1">
+            <span class="w-6 h-0.5 bg-black"></span>
+            <span class="w-6 h-0.5 bg-black"></span>
+            <span class="w-6 h-0.5 bg-black"></span>
+        </button>
+    </nav>
+
+     <section class="gallery-title bg-gradient-to-br from-[#0a3d62] to-[#3c6382] py-10 pb-16 rounded-b-[40px] min-h-screen" style="background-image: url('./image/our\ gallary.png'); background-size: cover; background-position: center;">
+				<div class="text-center text-[#145da0] text-3xl font-bold mb-8 tracking-wide">OUR GALLERY</div>
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg flex items-center justify-center" style="width:879.26px;height:603.67px;position:relative;left:316.37px;opacity:1;">
+                    <img src="./image/v773_648.png" alt="Gallery 1" style="width:100%;height:100%;object-fit:cover;transform:rotate(0deg);" />
+                </div>
+			</div>
+		</section>
+  <!-- Footer -->
+  <footer class="w-full px-4 py-10 overflow-x-hidden"
+    style="background: linear-gradient(180deg, #42AEC1 0%, #236A80 18.15%, #01355C 100%);">
+    <div class="max-w-7xl mx-auto flex flex-wrap gap-8 text-white">
+        <!-- Logo & About -->
+        <div class="flex flex-col items-start min-w-[220px] flex-1">
+            <div class="flex items-center mb-4">
+                <img src="https://i.ibb.co/6bQ7Qp/germantech-logo.png" alt="GermanTech Logo" class="w-12 h-12 mr-2">
+                <div>
+                    <span class="font-bold text-xl block font-montserrat">GermanTech</span>
+                    <span class="text-xs tracking-widest font-montserrat">uPVC WINDOWS</span>
+                </div>
+            </div>
+            <p class="text-sm leading-relaxed font-montserrat">
+                Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers committed to
+                delivering eco-friendly, sustainable solutions. Our focus lies in the development and manufacturing
+                of high-quality uPVC profiles that meet European standards.
+            </p>
+        </div>
+        <!-- Vertical Divider (hide on small screens) -->
+        <div class="border-l border-white border-opacity-30 mx-4 hidden md:block"></div>
+        <!-- Quick Links -->
+        <div class="flex-1 min-w-[180px]">
+            <h3 class="font-bold text-lg mb-4 font-montserrat">Quick Links</h3>
+            <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
+                <li><a href="./Home.html" class="hover:underline">Home</a></li>
+                <li><a href="./About-us.html" class="hover:underline">About us</a></li>
+                <li><a href="./gallery.html" class="hover:underline">Gallery</a></li>
+                <li><a href="./Home.html" class="hover:underline">Testimonials</a></li>
+                <li><a href="./contact-us.html" class="hover:underline">Contact Us</a></li>
+            </ul>
+            <div class="mt-6">
+                <select class="w-36 px-3 py-2 rounded shadow text-black font-montserrat">
+                    <option>Select language</option>
+                    <option>English</option>
+                    <option>Hindi</option>
+                    <option>Punjabi</option>
+                </select>
+                <div class="flex items-center mt-2 text-xs font-montserrat">
+                    <span>Powered By :</span>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
+                        alt="Google Translate" class="w-5 h-5 ml-1">
+                </div>
+            </div>
+        </div>
+        <!-- Dayal Fabricator Windows -->
+        <div class="flex-1 min-w-[180px]">
+            <h3 class="font-bold text-lg mb-4 font-montserrat">Dayal Fabricator Windows</h3>
+            <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
+                <li>UPVC Casement Windows</li>
+                <li>Tilt And Turn Windows</li>
+                <li>UPVC Sliding Doors</li>
+                <li>UPVC Casement Doors</li>
+                <li>Double Glazing Doors</li>
+                <li>DAYAL Steel Doors</li>
+            </ul>
+        </div>
+        <!-- Contact Info -->
+        <div class="flex-1 min-w-[180px]">
+            <h3 class="font-bold text-lg mb-4 font-montserrat">Contact Info</h3>
+            <ul class="space-y-4 text-sm font-montserrat flex flex-col gap-1">
+                <li class="flex items-center gap-4 opacity-100">
+    <span class="material-icons text-2xl align-middle">location_on</span>
+    <span class="font-montserrat leading-snug w-52 whitespace-nowrap">
+        Tajpur road back side Barth box factory near Hp <br> Gass Agency Ludhiana punjab
+    </br>
+</li>
+                <li class="flex items-center"><span class="material-icons mr-2">call</span><a
+                        href="tel:+919814868271" class="font-bold underline mr-2 font-montserrat">+91-9814686271</a>, <a
+                        href="tel:+919814468271" class="font-bold underline font-montserrat">+91-9814468271</a></li>
+                <li class="flex items-center"><span class="material-icons mr-2">email</span><a
+                        href="mailto:Dayalupvcwindow@gmail.com" class="font-montserrat">Dayalupvcwindow@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-t border-white border-opacity-20 mt-10 pt-6 text-center text-xs text-white font-montserrat w-full">
+        © Copyright 2024-2025 by Dayal Fabricator. || Designed & Developed by <span class="font-bold font-montserrat">WebEarl
+            Technologies</span>
+    </div>
+    <!-- Google Material Icons CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</footer>
+
+
+  <!-- Google Material Icons CDN -->
+  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</body>
+</html>
