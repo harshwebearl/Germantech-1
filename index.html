@@ -53,37 +53,41 @@
     <!-- Hero Section -->
     <section class="relative flex items-center pl-12 pt-16 overflow-hidden  h-[820px]"
         style="background-image: url('image/Rectangle63.png'); background-size: cover; background-position: center;">
-        <div class="w-full md:w-1/2 py-8 md:py-16 z-10 px-2 sm:px-4 md:px-0">
-            <h1 class="text-white text-[18px] sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-2 sm:mb-4 md:mb-6">Welcome To<br>
-                <span class="text-[14px] sm:text-2xl md:text-4xl lg:text-5xl block mt-2">Dayal’s UPVC<br>Window And Door</span>
-            </h1>
-            <p class="text-white text-[12px] sm:text-base md:text-xl mb-2 sm:mb-4 md:mb-8 font-semibold">Excellence and Innovation in Every uPVC Frame</p>
-            <a href="#"
-                class="inline-block px-2 sm:px-4 md:px-8 py-1 sm:py-2 md:py-3 border-2 border-white text-white rounded hover:bg-white hover:text-cyan-700 transition text-xs sm:text-base">Explore
-                our product</a>
-        </div>
-        <!-- Images in hexagon shapes -->
-        <div class="hidden md:flex w-1/2 justify-start items-center relative z-10">
-            <div class="relative w-full h-full flex items-center">
-                <!-- Background images behind hexagons -->
-                <div class="absolute rounded-lg shadow-lg w-full h-full" style="
-                        background-image: url('image/home1bg.jpg');
-                        background-size: cover;
-                        background-position: 5% center;
-                        clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 75% 100%, 23% 100%, 0% 50%);
-                        z-index: 1;
-                    ">
-                    <img src="image/Rectangle 55.png" alt="" class="w-full h-full object-cover opacity-70">
+        <div class="flex flex-col md:flex-row w-full items-center pt-10 md:pt-16 px-4 md:px-0 h-auto md:h-[820px]">
+            <!-- Left: Content -->
+            <div class="w-full md:w-1/2 py-6 md:py-16 z-10 flex flex-col justify-center items-start md:items-start">
+                <h1 class="text-white text-[20px] sm:text-3xl md:text-5xl lg:text-6xl font-extrabold mb-2 sm:mb-4 md:mb-6 leading-tight">Welcome To<br>
+                    <span class="text-[15px] sm:text-2xl md:text-4xl lg:text-5xl block mt-2">Dayal’s UPVC<br class="block sm:hidden">Window And Door</span>
+                </h1>
+                <p class="text-white text-[12px] sm:text-base md:text-xl mb-2 sm:mb-4 md:mb-8 font-semibold">Excellence and Innovation in Every uPVC Frame</p>
+                <a href="#"
+                    class="inline-block px-3 sm:px-6 md:px-8 py-2 sm:py-2 md:py-3 border-2 border-white text-white rounded-full hover:bg-white hover:text-cyan-700 transition text-xs sm:text-base">Explore our product</a>
+            </div>
+            <!-- Right: Images in hexagon shapes (desktop/tablet) and main image (mobile) -->
+            <div class="w-full md:w-1/2 flex justify-center items-center relative z-10 mt-6 md:mt-0">
+                <!-- Desktop/Tablet: Hexagon images -->
+                <div class="hidden md:flex w-full h-full items-center relative">
+                    <div class="absolute rounded-lg shadow-lg w-full h-full" style="
+                            background-image: url('image/home1bg.jpg');
+                            background-size: cover;
+                            background-position: 5% center;
+                            clip-path: polygon(23% 0%, 100% 0%, 100% 100%, 75% 100%, 23% 100%, 0% 50%);
+                            z-index: 1;
+                        ">
+                        <img src="image/Rectangle 55.png" alt="" class="w-full h-full object-cover opacity-70">
+                    </div>
+                    <div class="flex flex-col relative items-center z-10">
+                        <img src="image/Polygon 1.png" alt=""
+                            class="w-24 sm:w-40 lg:w-60 object-cover relative -left-6 sm:-left-12 top-4 sm:top-10 drop-shadow-md">
+                        <img src="image/Polygon 2.png" alt=""
+                            class="w-24 sm:w-40 lg:w-60 object-cover relative -left-12 sm:-left-24 lg:-left-48 -top-4 sm:-top-10 drop-shadow-md">
+                        <img src="image/Polygon 2 (2).png" alt=""
+                            class="w-24 sm:w-40 lg:w-60 object-cover -left-6 sm:-left-12 -top-8 sm:-top-24 relative drop-shadow-md">
+                    </div>
                 </div>
-
-                <!-- Hexagon images in front -->
-                <div class="flex flex-col relative items-center z-10">
-                    <img src="image/Polygon 1.png" alt=""
-                        class="w-24 sm:w-40 lg:w-60 object-cover relative -left-6 sm:-left-12 top-4 sm:top-10 drop-shadow-md">
-                    <img src="image/Polygon 2.png" alt=""
-                        class="w-24 sm:w-40 lg:w-60 object-cover relative -left-12 sm:-left-24 lg:-left-48 -top-4 sm:-top-10 drop-shadow-md">
-                    <img src="image/Polygon 2 (2).png" alt=""
-                        class="w-24 sm:w-40 lg:w-60 object-cover -left-6 sm:-left-12 -top-8 sm:-top-24 relative drop-shadow-md">
+                <!-- Mobile: Show main image only -->
+                <div class="md:hidden w-full flex justify-center items-center">
+                    <img src="image/home1bg.jpg" alt="UPVC Main" class="w-full max-w-xs rounded-lg shadow-lg object-cover" />
                 </div>
             </div>
         </div>
@@ -340,33 +344,26 @@
         <div class="absolute inset-0 w-full h-full z-0 pointer-events-none">
             <div style="background: url('image/3rd product.png') top right/cover no-repeat; width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
         </div>
-        <div class="relative z-10 max-w-6xl mx-auto mt-12 rounded-2xl shadow-lg flex overflow-visible bg-transparent">
-            <!-- Left: Content -->
-            <div class="w-1/2 p-10 flex flex-col justify-center bg-opacity-80 rounded-l-2xl" style="background: linear-gradient(-270deg, #46B7CB 0%, #328290 13.05%, #003566 42.23%);">
-                <h2 class="text-white text-xl md:text-2xl font-bold mb-2">WHY CHOOSE US</h2>
-                <h3 class="text-white text-lg md:text-xl font-semibold mb-4">Why Choose Dayal Fabricator</h3>
-                <p class="text-white text-sm mb-6">
-                    Dayal Fabricator specializes in manufacturing top-quality UPVC doors and windows that are designed
-                    to be durable, energy-efficient, and aesthetically pleasing. We aim to enhance every home or
-                    commercial space with eco-friendly solutions. Our UPVC doors and windows are made from
-                    superior-grade materials, ensuring durability, weather resistance, and long-lasting performance.
-                    They are designed to withstand tough environmental conditions while retaining their aesthetic
-                    appeal. We prioritize sustainability by offering products that help in reducing energy consumption.
-                    Our UPVC windows and doors involve minimal maintenance, keeping your spaces secure and insulated in
-                    the winter, and fresh during hot seasons.
-                </p>
-                <ul class="text-white text-sm list-disc pl-5 mb-6">
-                    <li>Superior Quality: Long-lasting and environmentally friendly UPVC products</li>
-                    <li>Modern Designs, Sleek and contemporary window and door solutions for every space</li>
-                    <li>Expert Installation: Professional service and support from our experienced team.</li>
-                </ul>
-                <button
-                    class="bg-white text-[#003566] px-6 py-2 rounded-full font-semibold shadow hover:bg-[#46B7CB] hover:text-white transition">Learn
-                    More</button>
-            </div>
-            <!-- Right: Image -->
-            <div class="w-1/2 rounded-r-2xl">
-                <img src="image\v780_679.png" alt="UPVC Window" class="w-[680.32px] h-[591.96px]  rounded-r-2xl shadow-lg" />
+        <div class="relative z-10 max-w-6xl mx-auto mt-12 flex justify-center">
+            <div class="w-full sm:w-4/5 md:w-3/4 bg-gradient-to-tr from-[#003566] via-[#46B7CB] to-[#328290] rounded-2xl shadow-lg flex flex-col md:flex-row items-center p-4 sm:p-8 md:p-10">
+                <!-- Image Side -->
+                <div class="w-full md:w-1/2 flex justify-center items-center mb-4 md:mb-0 md:mr-6">
+                    <img src="image/v780_679.png" alt="UPVC Window" class="w-48 sm:w-64 md:w-80 h-auto rounded-xl shadow-lg" />
+                </div>
+                <!-- Content Side -->
+                <div class="w-full md:w-1/2 flex flex-col justify-center">
+                    <h2 class="text-white text-lg sm:text-xl md:text-2xl font-bold mb-2 text-left">WHY CHOOSE US</h2>
+                    <h3 class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 text-left">Why Choose Dayal Fabricator</h3>
+                    <p class="text-white text-xs sm:text-sm mb-4 text-left">
+                        Dayal Fabricator specializes in manufacturing top-quality UPVC doors and windows that are designed to be durable, energy-efficient, and aesthetically pleasing. We aim to enhance every home or commercial space with eco-friendly solutions. Our UPVC doors and windows are made from superior-grade materials, ensuring durability, weather resistance, and long-lasting performance. They are designed to withstand tough environmental conditions while retaining their aesthetic appeal. We prioritize sustainability by offering products that help in reducing energy consumption. Our UPVC windows and doors involve minimal maintenance, keeping your spaces secure and insulated in the winter, and fresh during hot seasons.
+                    </p>
+                    <ul class="text-white text-xs sm:text-sm list-disc pl-4 mb-4 text-left">
+                        <li>Superior Quality: Long-lasting and environmentally sustainable UPVC products.</li>
+                        <li>Modern Designs: Sleek and contemporary window and door solutions tailored to your style.</li>
+                        <li>Expert Installation: Professional service and support from our experienced team.</li>
+                    </ul>
+                    <button class="bg-white text-[#003566] w-full sm:w-auto px-4 py-2 rounded-full font-semibold shadow hover:bg-[#46B7CB] hover:text-white transition text-xs sm:text-base mt-2">Learn More</button>
+                </div>
             </div>
         </div>
     </section>
@@ -382,12 +379,12 @@
       <img src="image/Rectangle 78.png" alt="UPVC Window" class="mb-6 object-contain" />
       <div class="text-center">
         <div class="text-[#FFD600] text-3xl font-bold mb-1">GERMENTECH</div>
-        <div class="text-white text-2xl font-bold mb-2">UPVC WINDOWS</div>
-        <div class="text-white text-lg font-bold mb-2">
+        <div class="text-white text-xs font-bold mb-2">UPVC WINDOWS</div>
+        <div class="text-white text-xs font-bold mb-2">
           M. <span class="underline">+91-9814686271</span>, <span class="underline">+9814468271</span>
         </div>
-        <div class="text-white text-lg font-bold mb-2">germentechupvcwindows.com</div>
-        <div class="text-white text-base font-bold leading-6">
+        <div class="text-white text-xs font-bold mb-2">germentechupvcwindows.com</div>
+        <div class="text-white text-xs font-bold leading-6">
           Tajpur road back side Barth box factory <br>
           near Hp Gass Agency Ludhiana punjab
         </div>
@@ -462,10 +459,10 @@
       
       <!-- Images -->
       <div class="flex gap-6 relative -z-10">
-        <img src="image/v814_336.png" alt="Window 1"
-             class="rounded-tl-lg w-[250px] h-[250px] object-cover shadow-xl " />
-        <img src="image/v814_337.png" alt="Window 2"
-             class="rounded-br-lg w-[250px] h-[250px] object-cover shadow-xl" />
+       <img src="image/v814_336.png" alt="Window 1"
+           class="rounded-tl-lg w-full sm:w-[250px] h-[180px] sm:h-[250px] object-cover shadow-xl" />
+       <img src="image/v814_337.png" alt="Window 2"
+           class="rounded-br-lg w-full sm:w-[250px] h-[180px] sm:h-[250px] object-cover shadow-xl" />
       </div>
     </div>
 
@@ -642,19 +639,26 @@
         </div>
         <!-- Contact Info -->
         <div class="flex-1 min-w-[180px]">
-            <h3 class="font-bold text-lg mb-4 font-montserrat">Contact Info</h3>
-            <ul class="space-y-4 text-sm font-montserrat flex flex-col gap-1">
-                <li class="flex items-center gap-4 opacity-100">
-    <span class="material-icons text-2xl align-middle">location_on</span>
-    <span class="font-montserrat leading-snug w-52 whitespace-nowrap">
-        Tajpur road back side Barth box factory near Hp <br> Gass Agency Ludhiana punjab
-    </br>
-</li>
-                <li class="flex items-center"><span class="material-icons mr-2">call</span><a
-                        href="tel:+919814868271" class="font-bold underline mr-2 font-montserrat">+91-9814686271</a>, <a
-                        href="tel:+919814468271" class="font-bold underline font-montserrat">+91-9814468271</a></li>
-                <li class="flex items-center"><span class="material-icons mr-2">email</span><a
-                        href="mailto:Dayalupvcwindow@gmail.com" class="font-montserrat">Dayalupvcwindow@gmail.com</a></li>
+            <h3 class="font-bold text-lg sm:text-xl mb-4 font-montserrat">Contact Info</h3>
+            <ul class="space-y-4 text-xs sm:text-sm font-montserrat flex flex-col gap-2">
+                <li class="flex items-start gap-2 sm:gap-4 opacity-100">
+                    <span class="material-icons text-xl sm:text-2xl align-middle">location_on</span>
+                    <span class="font-montserrat leading-snug w-full sm:w-48 whitespace-normal text-[11px] sm:text-sm">
+                        Tajpur road back side Barth box factory near Hp <br class="block sm:hidden">Gass Agency Ludhiana punjab
+                    </span>
+                </li>
+                <li class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+                    <span class="material-icons text-xl sm:text-2xl mr-0 sm:mr-2">call</span>
+                    <div class="flex flex-col sm:flex-row gap-1 sm:gap-2">
+                        <a href="tel:+919814868271" class="font-bold underline font-montserrat text-[12px] sm:text-sm">+91-9814686271</a>
+                        <span class="hidden sm:inline">,</span>
+                        <a href="tel:+919814468271" class="font-bold underline font-montserrat text-[12px] sm:text-sm">+91-9814468271</a>
+                    </div>
+                </li>
+                <li class="flex items-start gap-2 sm:gap-4">
+                    <span class="material-icons text-xl sm:text-2xl mr-0 sm:mr-2">email</span>
+                    <a href="mailto:Dayalupvcwindow@gmail.com" class="font-montserrat text-[12px] sm:text-sm break-all">Dayalupvcwindow@gmail.com</a>
+                </li>
             </ul>
         </div>
     </div>
