@@ -119,16 +119,16 @@
     </section>
 
     <!-- About Us Section -->
-    <section class="max-w-5xl mx-auto mt-12 bg-[#00335B] rounded-2xl shadow-lg flex overflow-hidden">
+    <section class="max-w-5xl mx-auto mt-12 bg-[#00335B] rounded-2xl shadow-lg flex flex-col md:flex-row overflow-hidden">
         <!-- Left: Image with custom curve -->
-        <div class="relative w-full md:w-1/2 h-full flex justify-center items-center">
+    <div class="relative w-full md:w-1/2 h-auto flex justify-center items-center mb-4 md:mb-0">
             <img src="image/v738_62.png" alt="House" class="w-full h-auto max-w-[180px] sm:max-w-xs md:max-w-full" />
         </div>
         <!-- Right: Content -->
-        <div class="w-full md:w-1/2 p-2 sm:p-4 md:p-10 flex flex-col justify-center" style="background: linear-gradient(270deg, #46B7CB 0%, #328290 15.5%, #00335B 97.41%);">
-            <h2 class="text-white text-[13px] sm:text-xl md:text-2xl font-bold mb-1 sm:mb-2 underline underline-offset-4">ABOUT US</h2>
-            <h3 class="text-white text-[11px] sm:text-lg md:text-xl font-bold mb-2 sm:mb-4">Welcome to Dayal's UPVC<br>Window and Door</h3>
-            <p class="text-white text-[10px] sm:text-sm md:text-[16px] font-medium mb-2 sm:mb-4 md:mb-8 leading-[1] tracking-[0] text-justify font-[Montserrat]">
+    <div class="w-full md:w-1/2 p-4 sm:p-6 md:p-10 flex flex-col justify-center text-left md:text-justify" style="background: linear-gradient(270deg, #46B7CB 0%, #328290 15.5%, #00335B 97.41%);">
+            <h2 class="text-white text-[15px] sm:text-xl md:text-2xl font-bold mb-2 sm:mb-2 underline underline-offset-4">ABOUT US</h2>
+            <h3 class="text-white text-[13px] sm:text-lg md:text-xl font-bold mb-3 sm:mb-4">Welcome to Dayal's UPVC Window and Door</h3>
+            <p class="text-white text-[12px] sm:text-sm md:text-[16px] font-medium mb-3 sm:mb-4 md:mb-8 leading-normal tracking-normal text-left md:text-justify font-[Montserrat]">
                 Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers dedicated to developing
                 and manufacturing high-performance uPVC profiles that meet European standards. Our innovative products
                 enhance living and working spaces by reducing heat, minimizing noise, and requiring no maintenance.
@@ -466,27 +466,15 @@
   <div class="max-w-7xl mx-auto flex pt-10 flex-col md:flex-row gap-8 items-start relative ">
         
     <!-- Left Side: Heading, Description, Images -->
-    <div class="md:w-1/2 w-full">
-      
-        <h2 class="text-3xl !md:text-4xl font-bold font-[poppins] mb-2 inline-block">
-          Advantages of Dayal Fabricator
-        </h2>
-        <h3 class="text-xl md:text-2xl font-semibold mb-2">
-          Transform Your Space with Dayal<br> Fabricator Solutions
-        </h3>
-        <p class="text-gray-700 mb-6 pr-20">
-          Experience the superior quality of Dayal Fabricator windows and doors. 
-          Enhance your comfort, security, and efficiency with our innovative and long- lasting solutions.
-        </p>
-   
-      
-      <!-- Images -->
-      <div class="flex gap-6 relative -z-10">
-       <img src="image/v814_336.png" alt="Window 1"
-           class="rounded-tl-lg w-full sm:w-[250px] h-[180px] sm:h-[250px] object-cover shadow-xl" />
-       <img src="image/v814_337.png" alt="Window 2"
-           class="rounded-br-lg w-full sm:w-[250px] h-[180px] sm:h-[250px] object-cover shadow-xl" />
-      </div>
+        <div class="md:w-1/2 w-full flex flex-col items-center text-center md:items-start md:text-left">
+                <h2 class="text-3xl !md:text-4xl font-bold font-[poppins] mb-2 inline-block">Advantages of Dayal Fabricator</h2>
+                <h3 class="text-xl md:text-2xl font-semibold mb-2">Transform Your Space with Dayal<br> Fabricator Solutions</h3>
+                <p class="text-gray-700 mb-6 md:pr-20">Experience the superior quality of Dayal Fabricator windows and doors. Enhance your comfort, security, and efficiency with our innovative and long- lasting solutions.</p>
+                <!-- Images -->
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 items-center justify-center w-full relative -z-10">
+                        <img src="image/v814_336.png" alt="Window 1" class="rounded-tl-lg w-full sm:w-[250px] h-[180px] sm:h-[250px] object-cover shadow-xl mb-4 sm:mb-0" />
+                        <img src="image/v814_337.png" alt="Window 2" class="rounded-br-lg w-full sm:w-[250px] h-[180px] sm:h-[250px] object-cover shadow-xl" />
+                </div>
     </div>
 
     <!-- Right Side: Stats Cards -->
