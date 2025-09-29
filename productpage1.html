@@ -2,21 +2,107 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport"  content="width=device-width, initial-scale=1.0">
-	<title>Product Page 1</title>
-	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<style>
+    <style>
         .font-lato {
             font-family: 'Lato', sans-serif;
+        }
+        /* Mobile-only styles */
+        @media (max-width: 767px) {
+            /* Global tighten fonts on mobile */
+            body { font-size: 12px; line-height: 1.35; }
+            .mobile-topbar span { font-size: 10px !important; }
+            .mobile-topbar .material-icons { font-size: 14px !important; }
+            nav ul li a { font-size: 12px !important; }
+            
+            /* Hide large decorative background images on mobile */
+            .bg-decor { display: none !important; }
+            
+            /* Header font size */
+            .mobile-header {
+                font-size: 10px !important;
+            }
+            /* Navbar vertical and compact */
+            .mobile-navbar {
+                flex-direction: column !important;
+                gap: 4px !important;
+                padding: 8px 0 !important;
+            }
+            /* Categories card */
+            .mobile-categories, .categories-card {
+                min-height: 120px !important;
+                max-height: none !important;
+                height: auto !important;
+                padding: 12px !important;
+                width: 92vw !important;
+                margin: 0 auto 12px auto !important;
+            }
+            .mobile-categories h2, .categories-card h2 {
+                font-size: 16px !important;
+                margin-bottom: 8px !important;
+            }
+            .mobile-categories ul, .categories-card ul {
+                font-size: 12px !important;
+                gap: 6px !important;
+            }
+            /* Image/content card */
+            .mobile-card {
+                width: 98vw !important;
+                margin: 0 auto !important;
+                flex-direction: column !important;
+                padding: 8px !important;
+            }
+            .mobile-card-img {
+                width: 130px !important;
+                height: 130px !important;
+                background: #46B7CB !important;
+                margin: 0 auto 8px auto !important;
+                border-radius: 16px 16px 0 0 !important;
+            }
+            .mobile-card-content {
+                font-size: 11px !important;
+                padding: 8px !important;
+            }
+            /* Wrap for cards area */
+            .cards-wrap {
+                gap: 12px !important;
+                height: auto !important;
+                margin-top: 16px !important;
+                margin-bottom: 24px !important;
+                padding: 0 8px !important;
+            }
+            /* Mobile menu sheet full width */
+            #mobile-menu ul {
+                position: static !important;
+                width: 100vw !important;
+                border-radius: 0 !important;
+                box-shadow: none !important;
+                padding-left: 16px !important;
+                padding-right: 16px !important;
+                font-size: 12px !important;
+            }
+            /* Mobile hero text sizes */
+            .mobile-hero-title { font-size: 12px !important; line-height: 1.15 !important; }
+            .mobile-hero-sub { font-size: 11px !important; }
+            .mobile-hero-body { font-size: 9.5px !important; line-height: 1.35 !important; }
+            .mobile-hero { margin-top: 6px !important; }
+            /* Footer compact */
+            .mobile-footer {
+                padding: 12px 4px !important;
+                font-size: 10px !important;
+            }
         }
     </style>
 </head>
 
-<body class="bg-[#043357] min-h-screen overflow-x-hidden">
-
-	<div class="bg-gray-900 text-white text-[9px] sm:text-xs md:text-sm flex flex-col md:flex-row md:items-center md:justify-between px-2 md:px-4 py-2 gap-1 sm:gap-0">
+<body>
+    <!-- Top Contact Bar -->
+    <div class="bg-gray-900 text-white text-[9px] sm:text-xs md:text-sm flex flex-col md:flex-row md:items-center md:justify-between px-2 md:px-4 py-2 gap-1 sm:gap-0">
         <div class="flex items-center space-x-2 mb-1 md:mb-0">
             <span class="text-orange-500">📞</span>
             <span class="text-[10px] sm:text-xs md:text-sm">+91-9814868271, +9814468271</span>
@@ -74,143 +160,172 @@
             });
         }
     </script>
-	<!-- Main Content Area Styled as Reference Image -->
-	<div class="bg-[#F5F7FA] flex items-center  justify-center min-h-[calc(100vh-200px)] pt-20 pb-24  relative">
-		<!-- Top left background image -->
-		<img src="image/Rectangle 2278-1.png" alt="Top Left"
-			class="absolute top-0 left-0 w-[771.62px] h-[960.64px] pointer-events-none z-0" />
-		<!-- Bottom right background image -->
-		<img src="image/Rectangle 2278-2.png" alt="Bottom Right"
-			class="absolute bottom-0 right-0 w-[584.87px] h-[728.14px] pointer-events-none z-0" />
+    <!-- Main Content Area Styled as Reference Image -->
+    <div class="bg-[#F5F7FA] flex flex-col items-center justify-center min-h-[calc(100vh-200px)] pt-8 pb-12 md:pt-20 md:pb-24 relative">
+        <!-- Top left background image -->
+        <img src="image/Rectangle 2278-1.png" alt="Top Left"
+            class="absolute top-0 left-0 w-[771.62px] h-[960.64px] pointer-events-none z-0 bg-decor" />
+        <!-- Bottom right background image -->
+        <img src="image/Rectangle 2278-2.png" alt="Bottom Right"
+            class="absolute bottom-0 right-0 w-[584.87px] h-[728.14px] pointer-events-none z-0 bg-decor" />
 
-		<!-- Main Card Centered Vertically & Horizontally -->
-		<div class="flex items-center justify-center mt-12 mb-32 gap-12 z-10 w-full max-w-[1512px] h-[621px]">
-			<!-- Left Card -->
-			<div style="height:621.56px;width:333px; background:rgba(44,62,80,0.7); border-radius:28px; box-shadow:4px 4px 16px 0px #00000040;"
-				class="z-10 flex flex-col items-start justify-start px-8 py-12">
-				<h2 class="text-white text-2xl font-bold mb-8">Categories</h2>
-				<ul class="text-white text-base font-medium space-y-6">
-					<li> <a href="./productpage1.html"> windows and Door </a></li>
-					<li> <a href="./productpage2.html">Allumum window and Door </a></li>
-					<li> <a href="./productpage3.html">wpc door and wall panel</a></li>
-					<li> <a href="#">UPVC Casement Doors </a></li>
-					<li> <a href="#">Double Glazing Doors </a></li>
-					<li> <a href="#">DAYAL Steel Doors </a></li>
-				</ul>
-			</div>
-			<!-- Right Card -->
-			<div class="max-w-5xl w-full rounded-xl shadow-lg text-white relative overflow-hidden flex h-[621.56px;]"
-				style="background: linear-gradient(270deg, #00335B 0%, #328290 37.39%, #46B7CB 46.05%); ">
-				<!-- Left Side Image -->
-				<div class="flex items-center justify-center overflow-hidden" style="width:550.88px; height:621.56px;">
-    <img src="image/Rectangle 2286.png" alt="UPVC Door"
-        class=" object-cover w-100% h-100%">
-</div>
-				<!-- Content Right Side -->
-				<div class="flex flex-col flex-1 px-8 py-8 justify-start items-start" style="height:621.56px;width:441px;">
-					<h4 class="text-white font-montserrat font-semibold text-[18px] mb-2" style="width:267px; height:33px;">Upvc windows and Door</h4>
-					<h2 class="text-white font-montserrat font-bold text-[28px] leading-[1] mb-4" style="font-family:'Montserrat',sans-serif; font-weight:400; font-size:28px; line-height:1; letter-spacing:0; vertical-align:middle; width:441px; height:102px; opacity:1;">
-						Enhance Your Space with Our<br>
-						Premium UPVC Casement Door Services
-					</h2>
-					<p class="text-[#B2E6F6] font-montserrat font-medium text-[16px] leading-[1] text-justify align-middle mt-2">
-						At Dayal Fabricator, we specialize in providing top-quality UPVC Casement Door solutions designed to enhance the aesthetics and functionality of your space. Our UPVC Casement Doors offer exceptional durability, energy efficiency, and modern design, making them a perfect choice for both residential and commercial properties. <br>
-					
-						Our UPVC Casement Doors are available in a variety of styles and finishes, customized to meet your specific needs. Whether you're looking to improve insulation, security, or simply update the look of your property, our expert team ensures professional installation and outstanding service. Choose our UPVC Casement Door services for a long-lasting, low-maintenance solution that combines style with performance.
-					</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Footer -->
-	<footer class="w-full px-4 py-10 overflow-x-hidden"
-    style="background: linear-gradient(180deg, #42AEC1 0%, #236A80 18.15%, #01355C 100%);">
-    <div class="max-w-7xl mx-auto flex flex-wrap gap-8 text-white">
-        <!-- Logo & About -->
-        <div class="flex flex-col items-start min-w-[220px] flex-1">
-            <div class="flex items-center mb-4">
-                <img src="https://i.ibb.co/6bQ7Qp/germantech-logo.png" alt="GermanTech Logo" class="w-12 h-12 mr-2">
-                <div>
-                    <span class="font-bold text-xl block font-montserrat">GermanTech</span>
-                    <span class="text-xs tracking-widest font-montserrat">uPVC WINDOWS</span>
-                </div>
-            </div>
-            <p class="text-sm leading-relaxed font-montserrat">
-                Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers committed to
-                delivering eco-friendly, sustainable solutions. Our focus lies in the development and manufacturing
-                of high-quality uPVC profiles that meet European standards.
-            </p>
-        </div>
-        <!-- Vertical Divider (hide on small screens) -->
-        <div class="border-l border-white border-opacity-30 mx-4 hidden md:block"></div>
-        <!-- Quick Links -->
-        <div class="flex-1 min-w-[180px]">
-            <h3 class="font-bold text-lg mb-4 font-montserrat">Quick Links</h3>
-            <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
-                <li><a href="./index.html" class="hover:underline">Home</a></li>
-                <li><a href="./About-us.html" class="hover:underline">About us</a></li>
-                <li><a href="./gallery.html" class="hover:underline">Gallery</a></li>
-                <li><a href="./index.html" class="hover:underline">Testimonials</a></li>
-                <li><a href="./contact-us.html" class="hover:underline">Contact Us</a></li>
-            </ul>
-            <div class="mt-6">
-                <select class="w-36 px-3 py-2 rounded shadow text-black font-montserrat">
-                    <option>Select language</option>
-                    <option>English</option>
-                    <option>Hindi</option>
-                    <option>Punjabi</option>
-                </select>
-                <div class="flex items-center mt-2 text-xs font-montserrat">
-                    <span>Powered By :</span>
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
-                        alt="Google Translate" class="w-5 h-5 ml-1">
-                </div>
-            </div>
-        </div>
-        <!-- Dayal Fabricator Windows -->
-        <div class="flex-1 min-w-[180px]">
-            <h3 class="font-bold text-lg mb-4 font-montserrat">Dayal Fabricator Windows</h3>
-            <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
-                <li>UPVC Casement Windows</li>
-                <li>Tilt And Turn Windows</li>
-                <li>UPVC Sliding Doors</li>
-                <li>UPVC Casement Doors</li>
-                <li>Double Glazing Doors</li>
-                <li>DAYAL Steel Doors</li>
-            </ul>
-        </div>
-        <!-- Contact Info -->
-        <div class="flex-1 min-w-[180px]">
-            <h3 class="font-bold text-lg sm:text-xl mb-4 font-montserrat">Contact Info</h3>
-            <ul class="space-y-4 text-xs sm:text-sm font-montserrat flex flex-col gap-2">
-                <li class="flex items-start gap-2 sm:gap-4 opacity-100">
-                    <span class="material-icons text-xl sm:text-2xl align-middle">location_on</span>
-                    <span class="font-montserrat leading-snug w-full sm:w-48 whitespace-normal text-[11px] sm:text-sm">
-                        Tajpur road back side Barth box factory near Hp <br class="block sm:hidden">Gass Agency Ludhiana punjab
-                    </span>
-                </li>
-                <li class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
-                    <span class="material-icons text-xl sm:text-2xl mr-0 sm:mr-2">call</span>
-                    <div class="flex flex-col sm:flex-row gap-1 sm:gap-2">
-                        <a href="tel:+919814868271" class="font-bold underline font-montserrat text-[12px] sm:text-sm">+91-9814686271</a>
-                        <span class="hidden sm:inline">,</span>
-                        <a href="tel:+919814468271" class="font-bold underline font-montserrat text-[12px] sm:text-sm">+91-9814468271</a>
+        <!-- Main Card Centered Vertically & Horizontally -->
+    <div class="flex items-center justify-center mt-12 mb-32 gap-12 z-10 w-full max-w-[1512px] h-[621px] cards-wrap">
+            <!-- Left Card (Categories) -->
+                <div style="height:621.56px;width:333px; background:rgba(44,62,80,0.7); border-radius:28px; box-shadow:4px 4px 16px 0px #00000040;"
+                    class="z-10 flex flex-col items-start justify-start px-4 py-8 md:px-8 md:py-12 w-full md:w-[333px] md:h-[621px] mb-6 md:mb-0 min-h-[180px] max-h-[260px] categories-card">
+                <h2 class="text-white text-2xl font-bold mb-8">Categories</h2>
+                <ul class="text-white text-base font-medium space-y-6">
+                    <li> <a href="./productpage1.html"> windows and Door </a></li>
+                    <li> <a href="./productpage2.html">Allumum window and Door </a></li>
+                    <li> <a href="./productpage3.html">wpc door and wall panel</a></li>
+                    <li> <a href="#">UPVC Casement Doors </a></li>
+                    <li> <a href="#">Double Glazing Doors </a></li>
+                    <li> <a href="#">DAYAL Steel Doors </a></li>
+                </ul>
+                <!-- Image and Content for mobile only -->
+                <div class="block md:hidden mt-8 w-full mobile-hero">
+                    <div class="max-w-5xl w-full rounded-xl shadow-lg text-white relative overflow-hidden flex flex-col h-auto"
+                        style="background: linear-gradient(270deg, #00335B 0%, #328290 37.39%, #46B7CB 46.05%);">
+                        <div class="w-full max-w-md mx-auto rounded-2xl shadow-xl text-white relative overflow-hidden flex flex-row h-auto bg-gradient-to-b from-[#46B7CB] via-[#328290] to-[#00335B] p-2 mt-[-18px]">
+                            <!-- Image left -->
+                            <div class="flex items-center justify-center overflow-hidden bg-white rounded-l-xl p-2 w-[45%] min-w-[110px]">
+                                <img src="image/Rectangle 2286.png" alt="UPVC Door" class="object-contain w-full h-auto rounded-xl">
+                            </div>
+                            <!-- Content right -->
+                            <div class="flex flex-col flex-1 px-2 py-2 justify-start items-start w-[55%] min-h-[180px] max-h-[260px]">
+                                <h4 class="text-white font-montserrat font-semibold text-[12px] mb-1 mobile-hero-sub">Upvc windows and Door</h4>
+                                <h2 class="text-white font-montserrat font-bold text-[13px] leading-[1.1] mb-2 mobile-hero-title" style="font-family:'Montserrat',sans-serif; font-weight:400; line-height:1.1; letter-spacing:0; vertical-align:middle;">
+                                    Enhance Your Space with Our<br>
+                                    Premium UPVC Casement Door Services
+                                </h2>
+                                <p class="text-[#B2E6F6] font-montserrat font-medium text-[10px] leading-[1.3] text-justify align-middle mt-1 mobile-hero-body">
+                                    At Dayal Fabricator, we specialize in providing top-quality UPVC Casement Door solutions designed to enhance the aesthetics and functionality of your space. Our UPVC Casement Doors offer exceptional durability, energy efficiency, and modern design, making them a perfect choice for both residential and commercial properties.<br>
+                                    Our UPVC Casement Doors are available in a variety of styles and finishes, customized to meet your specific needs. Whether you're looking to improve insulation, security, or simply update the look of your property, our expert team ensures professional installation and outstanding service. Choose our UPVC Casement Door services for a long-lasting, low-maintenance solution that combines style with performance.
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </li>
-                <li class="flex items-start gap-2 sm:gap-4">
-                    <span class="material-icons text-xl sm:text-2xl mr-0 sm:mr-2">email</span>
-                    <a href="mailto:Dayalupvcwindow@gmail.com" class="font-montserrat text-[12px] sm:text-sm break-all">Dayalupvcwindow@gmail.com</a>
-                </li>
-            </ul>
+                </div>
+            </div>
+            <!-- Right Card (Image and Content for desktop only) -->
+            <div class="max-w-5xl w-full rounded-xl shadow-lg text-white relative overflow-hidden flex h-[621.56px;] md:flex-row hidden md:flex"
+                style="background: linear-gradient(270deg, #00335B 0%, #328290 37.39%, #46B7CB 46.05%); ">
+                <!-- Left Side Image -->
+                <div class="flex items-center justify-center overflow-hidden" style="width:550.88px; height:621.56px;">
+                    <img src="image/Rectangle 2286.png" alt="UPVC Door" class="object-cover w-full h-full rounded-xl">
+                </div>
+                <!-- Content Right Side -->
+                <div class="flex flex-col flex-1 px-8 py-8 justify-start items-start" style="height:621.56px;width:441px;">
+                    <h4 class="text-white font-montserrat font-semibold text-[18px] mb-2" style="width:267px; height:33px;">Upvc windows and Door</h4>
+                    <h2 class="text-white font-montserrat font-bold text-[28px] leading-[1] mb-4" style="font-family:'Montserrat',sans-serif; font-weight:400; font-size:28px; line-height:1; letter-spacing:0; vertical-align:middle; width:441px; height:102px; opacity:1;">
+                        Enhance Your Space with Our<br>
+                        Premium UPVC Casement Door Services
+                    </h2>
+                    <p class="text-[#B2E6F6] font-montserrat font-medium text-[16px] leading-[1] text-justify align-middle mt-2">
+                        At Dayal Fabricator, we specialize in providing top-quality UPVC Casement Door solutions designed to enhance the aesthetics and functionality of your space. Our UPVC Casement Doors offer exceptional durability, energy efficiency, and modern design, making them a perfect choice for both residential and commercial properties. <br>
+                        Our UPVC Casement Doors are available in a variety of styles and finishes, customized to meet your specific needs. Whether you're looking to improve insulation, security, or simply update the look of your property, our expert team ensures professional installation and outstanding service. Choose our UPVC Casement Door services for a long-lasting, low-maintenance solution that combines style with performance.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="border-t border-white border-opacity-20 mt-10 pt-6 text-center text-xs text-white font-montserrat w-full">
-        © Copyright 2024-2025 by Dayal Fabricator. || Designed & Developed by <span class="font-bold font-montserrat">WebEarl
-            Technologies</span>
-    </div>
-    <!-- Google Material Icons CDN -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</footer>
+    <!-- Footer -->
+    <footer class="w-full px-4 py-10 overflow-x-hidden mobile-footer"
+        style="background: linear-gradient(180deg, #42AEC1 0%, #236A80 18.15%, #01355C 100%);">
+        <div class="max-w-7xl mx-auto flex flex-wrap gap-8 text-white">
+            <!-- Logo & About -->
+            <div class="flex flex-col items-start min-w-[220px] flex-1">
+                <div class="flex items-center mb-4">
+                    <img src="https://i.ibb.co/6bQ7Qp/germantech-logo.png" alt="GermanTech Logo" class="w-12 h-12 mr-2">
+                    <div>
+                        <span class="font-bold text-xl block font-montserrat">GermanTech</span>
+                        <span class="text-xs tracking-widest font-montserrat">uPVC WINDOWS</span>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed font-montserrat">
+                    Founded in 2019, Dayal Fabricator is driven by a passionate team of engineers committed to
+                    delivering eco-friendly, sustainable solutions. Our focus lies in the development and manufacturing
+                    of high-quality uPVC profiles that meet European standards.
+                </p>
+            </div>
+            <!-- Vertical Divider (hide on small screens) -->
+            <div class="border-l border-white border-opacity-30 mx-4 hidden md:block"></div>
+            <!-- Quick Links -->
+            <div class="flex-1 min-w-[180px]">
+                <h3 class="font-bold text-lg mb-4 font-montserrat">Quick Links</h3>
+                <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
+                    <li><a href="./index.html" class="hover:underline">Home</a></li>
+                    <li><a href="./About-us.html" class="hover:underline">About us</a></li>
+                    <li><a href="./gallery.html" class="hover:underline">Gallery</a></li>
+                    <li><a href="./index.html" class="hover:underline">Testimonials</a></li>
+                    <li><a href="./contact-us.html" class="hover:underline">Contact Us</a></li>
+                </ul>
+                <div class="mt-6">
+                    <select class="w-36 px-3 py-2 rounded shadow text-black font-montserrat">
+                        <option>Select language</option>
+                        <option>English</option>
+                        <option>Hindi</option>
+                        <option>Punjabi</option>
+                    </select>
+                    <div class="flex items-center mt-2 text-xs font-montserrat">
+                        <span>Powered By :</span>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Logo_2013_Google.png"
+                            alt="Google Translate" class="w-5 h-5 ml-1">
+                    </div>
+                </div>
+            </div>
+            <!-- Dayal Fabricator Windows -->
+            <div class="flex-1 min-w-[180px]">
+                <h3 class="font-bold text-lg mb-4 font-montserrat">Dayal Fabricator Windows</h3>
+                <ul class="space-y-2 text-sm font-montserrat flex flex-col gap-2">
+                    <li>UPVC Casement Windows</li>
+                    <li>Tilt And Turn Windows</li>
+                    <li>UPVC Sliding Doors</li>
+                    <li>UPVC Casement Doors</li>
+                    <li>Double Glazing Doors</li>
+                    <li>DAYAL Steel Doors</li>
+                </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="flex-1 min-w-[180px]">
+                <h3 class="font-bold text-lg sm:text-xl mb-4 font-montserrat">Contact Info</h3>
+                <ul class="space-y-4 text-xs sm:text-sm font-montserrat flex flex-col gap-2">
+                    <li class="flex items-start gap-2 sm:gap-4 opacity-100">
+                        <span class="material-icons text-xl sm:text-2xl align-middle">location_on</span>
+                        <span
+                            class="font-montserrat leading-snug w-full sm:w-48 whitespace-normal text-[11px] sm:text-sm">
+                            Tajpur road back side Barth box factory near Hp <br class="block sm:hidden">Gass Agency
+                            Ludhiana punjab
+                        </span>
+                    </li>
+                    <li class="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+                        <span class="material-icons text-xl sm:text-2xl mr-0 sm:mr-2">call</span>
+                        <div class="flex flex-col sm:flex-row gap-1 sm:gap-2">
+                            <a href="tel:+919814868271"
+                                class="font-bold underline font-montserrat text-[12px] sm:text-sm">+91-9814686271</a>
+                            <span class="hidden sm:inline">,</span>
+                            <a href="tel:+919814468271"
+                                class="font-bold underline font-montserrat text-[12px] sm:text-sm">+91-9814468271</a>
+                        </div>
+                    </li>
+                    <li class="flex items-start gap-2 sm:gap-4">
+                        <span class="material-icons text-xl sm:text-2xl mr-0 sm:mr-2">email</span>
+                        <a href="mailto:Dayalupvcwindow@gmail.com"
+                            class="font-montserrat text-[12px] sm:text-sm break-all">Dayalupvcwindow@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div
+            class="border-t border-white border-opacity-20 mt-10 pt-6 text-center text-xs text-white font-montserrat w-full">
+            © Copyright 2024-2025 by Dayal Fabricator. || Designed & Developed by <span
+                class="font-bold font-montserrat">WebEarl
+                Technologies</span>
+        </div>
+        <!-- Google Material Icons CDN -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </footer>
 </body>
 
 </html>
